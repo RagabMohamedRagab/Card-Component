@@ -1,0 +1,101 @@
+/*
+  Challenge by Frontend Mentor. 
+  Nice Day For You
+  Media Query To Make You Site Responsive Visible Of Site Of User
+********************/
+@media (min-width:670px) and (max-width:780px){
+    .container section div p {
+        font-size: .7rem;
+        font-weight: bold;
+    }
+    .container section div h1{
+        font-size: 1.2rem;
+    }
+    container section button{
+        padding: 3px;
+        font-size: .9rem;
+
+    }
+}
+@media (min-width:560px) and (max-width:670px){
+    .container section div p {
+        font-size: .6rem;
+       
+    }
+    .container section div h1{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .container section button{
+        padding: 3px;
+        font-size: .7rem;
+        font-family: monospace;
+    }
+}
+@media (max-width:560px){
+    .container{
+        height: auto;
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:repeat(3,1fr);
+    }
+    .container section:nth-of-type(3) {
+        background-color: #00403F;
+        border-radius: 0px 0px 10px 10px;
+        /*
+        border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        */
+    }
+    .container section:first-of-type {
+        background-color: #E28525;
+        border-radius: 10px 10px 0px 0px;
+        /*
+        border-top-left-radius: 10px;
+        border-top-left-radius: 10px;
+        */
+    }
+    .container section button {
+        margin-left: 0px;
+        margin-top:5px ;
+    }
+}
+@media (min-width:460px) and (max-width:560px){
+    
+    .container section div p {
+        margin: 12px 0px ;
+        /*
+       margin-left:0px
+       margin-top:10px;
+       margin-right: 0px;
+       margin-bottom:10px
+        */
+      line-height: 1.3rem;
+      font-size: .8rem;
+    }
+    
+}
+@media (max-width:460px)
+{
+    .container section div h1{
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+    .container section div p{
+        font-size: .7rem;
+        margin: 10px 0px;
+    }
+    .container section button{
+        padding: 5px;
+        font-size: .7rem;
+    }
+
+}
+
+
+
+
+
+
+
+

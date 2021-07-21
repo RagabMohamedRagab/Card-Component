@@ -1,0 +1,103 @@
+/*
+  Nice Day For You :
+    This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.
+     Date: 19-7-2021 2:43:45 
+    */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image:linear-gradient( to bottom  right,#E28525,#016972,#00403F);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*
+Start Container
+*/
+.container {
+    width: 70%;
+    height: 70vh;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container section {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 10%;
+
+}
+
+.container section:nth-of-type(2) {
+    background-color: #016972;
+}
+.container section:first-of-type {
+    background-color: #E28525;
+    border-radius: 10px 0px 0px 10px;
+    /*
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    */
+}
+.container section:nth-of-type(3) {
+    background-color: #00403F;
+    border-radius: 0px 10px 10px 0px;
+    /*
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    */
+}
+
+.container section div h1 {
+    margin-top: 20%;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.container section div p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: .9rem;
+    font-weight: bold;
+    opacity: .8;
+    line-height: 1.3rem;
+}
+
+.container section button {
+    padding: 8px;
+    background-color: transparent;
+    font-size: .9rem;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.container section button {
+    margin-left: 25%;
+    
+}
+.container section:nth-of-type(1) button:hover,
+.container section:nth-of-type(2) button:hover,
+.container section:nth-of-type(3) button:hover{
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.container section:nth-of-type(1) button:hover{
+    color:#E28525;
+}
+.container section:nth-of-type(2) button:hover{
+    color:#016972;
+}
+.container section:nth-of-type(3) button:hover{
+    color:#00403F;
+}
+/*End Conatiner*/
